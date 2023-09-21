@@ -1,45 +1,32 @@
-class BankAccount:
+
+
+
+
+
+
+
+
+def linearSearchProduct (ProductList, targetProduct):
+   indices = []
   
-def __init__(self, account_number, account_holder_name, initial_balance =0.0):  
-  self.__account_number = account_number
-  self.__account_holder_name = account_holder_name
-  self.__account_balance = initial_balance
-
-
-def deposit(self, amount):
-  if amount > 0:
-    self.__account_balance += amount
-    print("deposited ₹{}. New balance:".formate(amount, self.__account_balance))
-
-  else:
-   print("Invalid deposit amount. please deposit a positive amount. ")
-    
-def withdraw(self, amount):
-￼ if amount > 0 and amount <= self.__ account_balance: self.__account_balance -= amount
-
-print("withdraw ₹{}. New balance: ₹{}".format(amount, self.__account_balance))
-
- else:
-print("Invalid withdrawl amount or insufficient balance. ")
-
-
-def display_balance(self):
-print(" Account balance for {} (Account ₹{}) : ₹{}". format(self.__account_holder_name, self. __account_number, self.__account_balance))
+   for index, Product in  enumerate(ProductList):
+     if Product == targetProduct:
+       indices.append(index)
+       return indices
 
 
 
-#bank account class
-account= BankAccount(account_number"1234567890", account_holder_name="Abi",
-initial_balance=5000.0)
+#example usage
+Products = ["shoes","boot","loafer","shoes","sandal",
+            "shoes"]
+target = "shoes" 
+target2 = 'apple'
+result = linearSearchProduct(Products, target)
+print(result)
 
 
-#test deposit and withdrawl
 
-account.display_balance()
-account.deposit(500.0)
-account.withdrawl(200.0)
-account.withdrawl(2000.0)
-account.display_balance()
-￼
-￼
-￼
+#￼
+#￼￼
+#￼
+#￼
